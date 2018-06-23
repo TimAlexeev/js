@@ -11,13 +11,13 @@
 function rearrangeArray(m: number, A: any[]) {
 	if (!m || !A.length) {
 		return;
-    }
-    
+	}
+	
 	console.log('Исходный массив: ' + A + " , m = " + m);
-    A = ((A.slice(0, m)
-        .reverse())
-        .concat(A.slice(m, A.length)
-        .reverse()))
-        .reverse();
+	A = ((A.slice(0, m)
+		.reverse())
+		.concat(A.slice(m, A.length)
+		.reverse()))
+		.reverse();
 	console.log('Массив после перестановки: ' + A);
  }
